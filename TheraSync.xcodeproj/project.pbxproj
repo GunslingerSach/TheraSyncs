@@ -27,6 +27,7 @@
 		531A8C102EBA029E00F2EF8A /* TheraSync.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheraSync.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		531A8C262EBA029F00F2EF8A /* TheraSyncTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TheraSyncTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		531A8C302EBA029F00F2EF8A /* TheraSyncUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TheraSyncUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		55F021AD2EBD1AE7006C0880 /* SignInOT.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = SignInOT.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -101,6 +102,13 @@
 				531A8C102EBA029E00F2EF8A /* TheraSync.app */,
 				531A8C262EBA029F00F2EF8A /* TheraSyncTests.xctest */,
 				531A8C302EBA029F00F2EF8A /* TheraSyncUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		55F021AF2EBD1AE7006C0880 /* Products */ = {
+			isa = PBXGroup;
+			children = (
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -211,6 +219,12 @@
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 531A8C112EBA029E00F2EF8A /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 55F021AF2EBD1AE7006C0880 /* Products */;
+					ProjectRef = 55F021AD2EBD1AE7006C0880 /* SignInOT.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				531A8C0F2EBA029E00F2EF8A /* TheraSync */,
