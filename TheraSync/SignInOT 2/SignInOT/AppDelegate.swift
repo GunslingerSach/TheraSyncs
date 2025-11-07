@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  OT main
+//  SignInOT
 //
-//  Created by Garvit Pareek on 06/11/2025.
+//  Created by Alishri Poddar on 02/11/25.
 //
 
 import UIKit

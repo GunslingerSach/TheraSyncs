@@ -27,8 +27,8 @@
 		293FF71A2EBDB49E00EED650 /* SignInOT.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = SignInOT.xcodeproj; sourceTree = "<group>"; };
 		293FF7792EBDB50400EED650 /* OT main.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = "OT main.xcodeproj"; sourceTree = "<group>"; };
 		293FF78B2EBDB50400EED650 /* register.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = register.xcodeproj; sourceTree = "<group>"; };
-		293FF82B2EBDCB1C00EED650 /* OT main.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = "OT main.xcodeproj"; sourceTree = "<group>"; };
 		293FF83D2EBDCB1C00EED650 /* register.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = register.xcodeproj; sourceTree = "<group>"; };
+		293FF8F62EBDCC5900EED650 /* SignInOT.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = SignInOT.xcodeproj; sourceTree = "<group>"; };
 		29664CA02EBD13BD00FCE105 /* OT main.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = "OT main.xcodeproj"; sourceTree = "<group>"; };
 		29DB339F2EBD945C00D4F881 /* Register Screen.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = "Register Screen.xcodeproj"; sourceTree = "<group>"; };
 		29FE79052EBD19670081E736 /* Register Screen.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = "Register Screen.xcodeproj"; sourceTree = "<group>"; };
@@ -114,14 +114,14 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		293FF84D2EBDCB1C00EED650 /* Products */ = {
+		293FF84F2EBDCB1C00EED650 /* Products */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		293FF84F2EBDCB1C00EED650 /* Products */ = {
+		293FF8F82EBDCC5900EED650 /* Products */ = {
 			isa = PBXGroup;
 			children = (
 			);
@@ -285,10 +285,6 @@
 					ProjectRef = 293FF7792EBDB50400EED650 /* OT main.xcodeproj */;
 				},
 				{
-					ProductGroup = 293FF84D2EBDCB1C00EED650 /* Products */;
-					ProjectRef = 293FF82B2EBDCB1C00EED650 /* OT main.xcodeproj */;
-				},
-				{
 					ProductGroup = 29FE79072EBD19670081E736 /* Products */;
 					ProjectRef = 29FE79052EBD19670081E736 /* Register Screen.xcodeproj */;
 				},
@@ -307,6 +303,10 @@
 				{
 					ProductGroup = 293FF7282EBDB49E00EED650 /* Products */;
 					ProjectRef = 293FF71A2EBDB49E00EED650 /* SignInOT.xcodeproj */;
+				},
+				{
+					ProductGroup = 293FF8F82EBDCC5900EED650 /* Products */;
+					ProjectRef = 293FF8F62EBDCC5900EED650 /* SignInOT.xcodeproj */;
 				},
 			);
 			projectRoot = "";
