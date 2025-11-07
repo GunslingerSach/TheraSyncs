@@ -7,83 +7,75 @@
 	objects = {
 
 /* Begin PBXContainerItemProxy section */
-		531A8C272EBA029F00F2EF8A /* PBXContainerItemProxy */ = {
+		293FF5EB2EBD9D6000EED650 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 531A8C082EBA029E00F2EF8A /* Project object */;
+			containerPortal = 293FF5CC2EBD9D5F00EED650 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 531A8C0F2EBA029E00F2EF8A;
-			remoteInfo = TheraSync;
+			remoteGlobalIDString = 293FF5D32EBD9D5F00EED650;
+			remoteInfo = register;
 		};
-		531A8C312EBA029F00F2EF8A /* PBXContainerItemProxy */ = {
+		293FF5F52EBD9D6000EED650 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 531A8C082EBA029E00F2EF8A /* Project object */;
+			containerPortal = 293FF5CC2EBD9D5F00EED650 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 531A8C0F2EBA029E00F2EF8A;
-			remoteInfo = TheraSync;
+			remoteGlobalIDString = 293FF5D32EBD9D5F00EED650;
+			remoteInfo = register;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		293FF71A2EBDB49E00EED650 /* SignInOT.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = SignInOT.xcodeproj; sourceTree = "<group>"; };
-		293FF7792EBDB50400EED650 /* OT main.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = "OT main.xcodeproj"; sourceTree = "<group>"; };
-		293FF78B2EBDB50400EED650 /* register.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = register.xcodeproj; sourceTree = "<group>"; };
-		293FF83D2EBDCB1C00EED650 /* register.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = register.xcodeproj; sourceTree = "<group>"; };
-		293FF8F62EBDCC5900EED650 /* SignInOT.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = SignInOT.xcodeproj; sourceTree = "<group>"; };
-		29664CA02EBD13BD00FCE105 /* OT main.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = "OT main.xcodeproj"; sourceTree = "<group>"; };
-		29DB339F2EBD945C00D4F881 /* Register Screen.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = "Register Screen.xcodeproj"; sourceTree = "<group>"; };
-		29FE79052EBD19670081E736 /* Register Screen.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = "Register Screen.xcodeproj"; sourceTree = "<group>"; };
-		531A8C102EBA029E00F2EF8A /* TheraSync.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheraSync.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		531A8C262EBA029F00F2EF8A /* TheraSyncTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TheraSyncTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		531A8C302EBA029F00F2EF8A /* TheraSyncUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TheraSyncUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		293FF5D42EBD9D5F00EED650 /* register.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = register.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		293FF5EA2EBD9D6000EED650 /* registerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = registerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		293FF5F42EBD9D6000EED650 /* registerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = registerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		531A8C382EBA029F00F2EF8A /* Exceptions for "TheraSync" folder in "TheraSync" target */ = {
+		293FF5FC2EBD9D6000EED650 /* Exceptions for "register" folder in "register" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Info.plist,
 			);
-			target = 531A8C0F2EBA029E00F2EF8A /* TheraSync */;
+			target = 293FF5D32EBD9D5F00EED650 /* register */;
 		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		531A8C122EBA029E00F2EF8A /* TheraSync */ = {
+		293FF5D62EBD9D5F00EED650 /* register */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
-				531A8C382EBA029F00F2EF8A /* Exceptions for "TheraSync" folder in "TheraSync" target */,
+				293FF5FC2EBD9D6000EED650 /* Exceptions for "register" folder in "register" target */,
 			);
-			path = TheraSync;
+			path = register;
 			sourceTree = "<group>";
 		};
-		531A8C292EBA029F00F2EF8A /* TheraSyncTests */ = {
+		293FF5ED2EBD9D6000EED650 /* registerTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = TheraSyncTests;
+			path = registerTests;
 			sourceTree = "<group>";
 		};
-		531A8C332EBA029F00F2EF8A /* TheraSyncUITests */ = {
+		293FF5F72EBD9D6000EED650 /* registerUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = TheraSyncUITests;
+			path = registerUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		531A8C0D2EBA029E00F2EF8A /* Frameworks */ = {
+		293FF5D12EBD9D5F00EED650 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		531A8C232EBA029F00F2EF8A /* Frameworks */ = {
+		293FF5E72EBD9D6000EED650 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		531A8C2D2EBA029F00F2EF8A /* Frameworks */ = {
+		293FF5F12EBD9D6000EED650 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -93,78 +85,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		293FF7282EBDB49E00EED650 /* Products */ = {
+		293FF5CB2EBD9D5F00EED650 = {
 			isa = PBXGroup;
 			children = (
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		293FF78D2EBDB50400EED650 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		293FF78F2EBDB50400EED650 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		293FF84F2EBDCB1C00EED650 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		293FF8F82EBDCC5900EED650 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		29664CA22EBD13BD00FCE105 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		29DB33AB2EBD945C00D4F881 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		29FE79072EBD19670081E736 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		531A8C072EBA029E00F2EF8A = {
-			isa = PBXGroup;
-			children = (
-				531A8C122EBA029E00F2EF8A /* TheraSync */,
-				531A8C292EBA029F00F2EF8A /* TheraSyncTests */,
-				531A8C332EBA029F00F2EF8A /* TheraSyncUITests */,
-				531A8C112EBA029E00F2EF8A /* Products */,
+				293FF5D62EBD9D5F00EED650 /* register */,
+				293FF5ED2EBD9D6000EED650 /* registerTests */,
+				293FF5F72EBD9D6000EED650 /* registerUITests */,
+				293FF5D52EBD9D5F00EED650 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		531A8C112EBA029E00F2EF8A /* Products */ = {
+		293FF5D52EBD9D5F00EED650 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				531A8C102EBA029E00F2EF8A /* TheraSync.app */,
-				531A8C262EBA029F00F2EF8A /* TheraSyncTests.xctest */,
-				531A8C302EBA029F00F2EF8A /* TheraSyncUITests.xctest */,
+				293FF5D42EBD9D5F00EED650 /* register.app */,
+				293FF5EA2EBD9D6000EED650 /* registerTests.xctest */,
+				293FF5F42EBD9D6000EED650 /* registerUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -172,168 +108,134 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		531A8C0F2EBA029E00F2EF8A /* TheraSync */ = {
+		293FF5D32EBD9D5F00EED650 /* register */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 531A8C392EBA029F00F2EF8A /* Build configuration list for PBXNativeTarget "TheraSync" */;
+			buildConfigurationList = 293FF5FD2EBD9D6000EED650 /* Build configuration list for PBXNativeTarget "register" */;
 			buildPhases = (
-				531A8C0C2EBA029E00F2EF8A /* Sources */,
-				531A8C0D2EBA029E00F2EF8A /* Frameworks */,
-				531A8C0E2EBA029E00F2EF8A /* Resources */,
+				293FF5D02EBD9D5F00EED650 /* Sources */,
+				293FF5D12EBD9D5F00EED650 /* Frameworks */,
+				293FF5D22EBD9D5F00EED650 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				531A8C122EBA029E00F2EF8A /* TheraSync */,
+				293FF5D62EBD9D5F00EED650 /* register */,
 			);
-			name = TheraSync;
+			name = register;
 			packageProductDependencies = (
 			);
-			productName = TheraSync;
-			productReference = 531A8C102EBA029E00F2EF8A /* TheraSync.app */;
+			productName = register;
+			productReference = 293FF5D42EBD9D5F00EED650 /* register.app */;
 			productType = "com.apple.product-type.application";
 		};
-		531A8C252EBA029F00F2EF8A /* TheraSyncTests */ = {
+		293FF5E92EBD9D6000EED650 /* registerTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 531A8C3E2EBA029F00F2EF8A /* Build configuration list for PBXNativeTarget "TheraSyncTests" */;
+			buildConfigurationList = 293FF6022EBD9D6000EED650 /* Build configuration list for PBXNativeTarget "registerTests" */;
 			buildPhases = (
-				531A8C222EBA029F00F2EF8A /* Sources */,
-				531A8C232EBA029F00F2EF8A /* Frameworks */,
-				531A8C242EBA029F00F2EF8A /* Resources */,
+				293FF5E62EBD9D6000EED650 /* Sources */,
+				293FF5E72EBD9D6000EED650 /* Frameworks */,
+				293FF5E82EBD9D6000EED650 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				531A8C282EBA029F00F2EF8A /* PBXTargetDependency */,
+				293FF5EC2EBD9D6000EED650 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
-				531A8C292EBA029F00F2EF8A /* TheraSyncTests */,
+				293FF5ED2EBD9D6000EED650 /* registerTests */,
 			);
-			name = TheraSyncTests;
+			name = registerTests;
 			packageProductDependencies = (
 			);
-			productName = TheraSyncTests;
-			productReference = 531A8C262EBA029F00F2EF8A /* TheraSyncTests.xctest */;
+			productName = registerTests;
+			productReference = 293FF5EA2EBD9D6000EED650 /* registerTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		531A8C2F2EBA029F00F2EF8A /* TheraSyncUITests */ = {
+		293FF5F32EBD9D6000EED650 /* registerUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 531A8C412EBA029F00F2EF8A /* Build configuration list for PBXNativeTarget "TheraSyncUITests" */;
+			buildConfigurationList = 293FF6052EBD9D6000EED650 /* Build configuration list for PBXNativeTarget "registerUITests" */;
 			buildPhases = (
-				531A8C2C2EBA029F00F2EF8A /* Sources */,
-				531A8C2D2EBA029F00F2EF8A /* Frameworks */,
-				531A8C2E2EBA029F00F2EF8A /* Resources */,
+				293FF5F02EBD9D6000EED650 /* Sources */,
+				293FF5F12EBD9D6000EED650 /* Frameworks */,
+				293FF5F22EBD9D6000EED650 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				531A8C322EBA029F00F2EF8A /* PBXTargetDependency */,
+				293FF5F62EBD9D6000EED650 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
-				531A8C332EBA029F00F2EF8A /* TheraSyncUITests */,
+				293FF5F72EBD9D6000EED650 /* registerUITests */,
 			);
-			name = TheraSyncUITests;
+			name = registerUITests;
 			packageProductDependencies = (
 			);
-			productName = TheraSyncUITests;
-			productReference = 531A8C302EBA029F00F2EF8A /* TheraSyncUITests.xctest */;
+			productName = registerUITests;
+			productReference = 293FF5F42EBD9D6000EED650 /* registerUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		531A8C082EBA029E00F2EF8A /* Project object */ = {
+		293FF5CC2EBD9D5F00EED650 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 2600;
-				LastUpgradeCheck = 2600;
+				LastSwiftUpdateCheck = 2610;
+				LastUpgradeCheck = 2610;
 				TargetAttributes = {
-					531A8C0F2EBA029E00F2EF8A = {
-						CreatedOnToolsVersion = 26.0.1;
+					293FF5D32EBD9D5F00EED650 = {
+						CreatedOnToolsVersion = 26.1;
 					};
-					531A8C252EBA029F00F2EF8A = {
-						CreatedOnToolsVersion = 26.0.1;
-						TestTargetID = 531A8C0F2EBA029E00F2EF8A;
+					293FF5E92EBD9D6000EED650 = {
+						CreatedOnToolsVersion = 26.1;
+						TestTargetID = 293FF5D32EBD9D5F00EED650;
 					};
-					531A8C2F2EBA029F00F2EF8A = {
-						CreatedOnToolsVersion = 26.0.1;
-						TestTargetID = 531A8C0F2EBA029E00F2EF8A;
+					293FF5F32EBD9D6000EED650 = {
+						CreatedOnToolsVersion = 26.1;
+						TestTargetID = 293FF5D32EBD9D5F00EED650;
 					};
 				};
 			};
-			buildConfigurationList = 531A8C0B2EBA029E00F2EF8A /* Build configuration list for PBXProject "TheraSync" */;
+			buildConfigurationList = 293FF5CF2EBD9D5F00EED650 /* Build configuration list for PBXProject "register" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
 			);
-			mainGroup = 531A8C072EBA029E00F2EF8A;
+			mainGroup = 293FF5CB2EBD9D5F00EED650;
 			minimizedProjectReferenceProxies = 1;
 			preferredProjectObjectVersion = 77;
-			productRefGroup = 531A8C112EBA029E00F2EF8A /* Products */;
+			productRefGroup = 293FF5D52EBD9D5F00EED650 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = 29664CA22EBD13BD00FCE105 /* Products */;
-					ProjectRef = 29664CA02EBD13BD00FCE105 /* OT main.xcodeproj */;
-				},
-				{
-					ProductGroup = 293FF78F2EBDB50400EED650 /* Products */;
-					ProjectRef = 293FF7792EBDB50400EED650 /* OT main.xcodeproj */;
-				},
-				{
-					ProductGroup = 29FE79072EBD19670081E736 /* Products */;
-					ProjectRef = 29FE79052EBD19670081E736 /* Register Screen.xcodeproj */;
-				},
-				{
-					ProductGroup = 29DB33AB2EBD945C00D4F881 /* Products */;
-					ProjectRef = 29DB339F2EBD945C00D4F881 /* Register Screen.xcodeproj */;
-				},
-				{
-					ProductGroup = 293FF78D2EBDB50400EED650 /* Products */;
-					ProjectRef = 293FF78B2EBDB50400EED650 /* register.xcodeproj */;
-				},
-				{
-					ProductGroup = 293FF84F2EBDCB1C00EED650 /* Products */;
-					ProjectRef = 293FF83D2EBDCB1C00EED650 /* register.xcodeproj */;
-				},
-				{
-					ProductGroup = 293FF7282EBDB49E00EED650 /* Products */;
-					ProjectRef = 293FF71A2EBDB49E00EED650 /* SignInOT.xcodeproj */;
-				},
-				{
-					ProductGroup = 293FF8F82EBDCC5900EED650 /* Products */;
-					ProjectRef = 293FF8F62EBDCC5900EED650 /* SignInOT.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
-				531A8C0F2EBA029E00F2EF8A /* TheraSync */,
-				531A8C252EBA029F00F2EF8A /* TheraSyncTests */,
-				531A8C2F2EBA029F00F2EF8A /* TheraSyncUITests */,
+				293FF5D32EBD9D5F00EED650 /* register */,
+				293FF5E92EBD9D6000EED650 /* registerTests */,
+				293FF5F32EBD9D6000EED650 /* registerUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		531A8C0E2EBA029E00F2EF8A /* Resources */ = {
+		293FF5D22EBD9D5F00EED650 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		531A8C242EBA029F00F2EF8A /* Resources */ = {
+		293FF5E82EBD9D6000EED650 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		531A8C2E2EBA029F00F2EF8A /* Resources */ = {
+		293FF5F22EBD9D6000EED650 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -343,21 +245,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		531A8C0C2EBA029E00F2EF8A /* Sources */ = {
+		293FF5D02EBD9D5F00EED650 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		531A8C222EBA029F00F2EF8A /* Sources */ = {
+		293FF5E62EBD9D6000EED650 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		531A8C2C2EBA029F00F2EF8A /* Sources */ = {
+		293FF5F02EBD9D6000EED650 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -367,32 +269,32 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		531A8C282EBA029F00F2EF8A /* PBXTargetDependency */ = {
+		293FF5EC2EBD9D6000EED650 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 531A8C0F2EBA029E00F2EF8A /* TheraSync */;
-			targetProxy = 531A8C272EBA029F00F2EF8A /* PBXContainerItemProxy */;
+			target = 293FF5D32EBD9D5F00EED650 /* register */;
+			targetProxy = 293FF5EB2EBD9D6000EED650 /* PBXContainerItemProxy */;
 		};
-		531A8C322EBA029F00F2EF8A /* PBXTargetDependency */ = {
+		293FF5F62EBD9D6000EED650 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 531A8C0F2EBA029E00F2EF8A /* TheraSync */;
-			targetProxy = 531A8C312EBA029F00F2EF8A /* PBXContainerItemProxy */;
+			target = 293FF5D32EBD9D5F00EED650 /* register */;
+			targetProxy = 293FF5F52EBD9D6000EED650 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		531A8C3A2EBA029F00F2EF8A /* Debug */ = {
+		293FF5FE2EBD9D6000EED650 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9Q2N5ARNGB;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = TheraSync/Info.plist;
+				INFOPLIST_FILE = register/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -400,7 +302,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.sachin.TheraSync;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.register;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
@@ -412,19 +314,19 @@
 			};
 			name = Debug;
 		};
-		531A8C3B2EBA029F00F2EF8A /* Release */ = {
+		293FF5FF2EBD9D6000EED650 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9Q2N5ARNGB;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = TheraSync/Info.plist;
+				INFOPLIST_FILE = register/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -432,7 +334,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.sachin.TheraSync;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.register;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
@@ -444,7 +346,7 @@
 			};
 			name = Release;
 		};
-		531A8C3C2EBA029F00F2EF8A /* Debug */ = {
+		293FF6002EBD9D6000EED650 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -479,6 +381,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 9Q2N5ARNGB;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
@@ -496,7 +399,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.1;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -507,7 +410,7 @@
 			};
 			name = Debug;
 		};
-		531A8C3D2EBA029F00F2EF8A /* Release */ = {
+		293FF6012EBD9D6000EED650 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -542,6 +445,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 9Q2N5ARNGB;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
@@ -553,7 +457,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.1;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -563,16 +467,17 @@
 			};
 			name = Release;
 		};
-		531A8C3F2EBA029F00F2EF8A /* Debug */ = {
+		293FF6032EBD9D6000EED650 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9Q2N5ARNGB;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.1;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.sachin.TheraSyncTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.registerTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = NO;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
@@ -580,20 +485,21 @@
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TheraSync.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TheraSync";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/register.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/register";
 			};
 			name = Debug;
 		};
-		531A8C402EBA029F00F2EF8A /* Release */ = {
+		293FF6042EBD9D6000EED650 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9Q2N5ARNGB;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.1;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.sachin.TheraSyncTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.registerTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = NO;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
@@ -601,18 +507,19 @@
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TheraSync.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TheraSync";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/register.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/register";
 			};
 			name = Release;
 		};
-		531A8C422EBA029F00F2EF8A /* Debug */ = {
+		293FF6062EBD9D6000EED650 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9Q2N5ARNGB;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.sachin.TheraSyncUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.registerUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = NO;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
@@ -620,18 +527,19 @@
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = TheraSync;
+				TEST_TARGET_NAME = register;
 			};
 			name = Debug;
 		};
-		531A8C432EBA029F00F2EF8A /* Release */ = {
+		293FF6072EBD9D6000EED650 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9Q2N5ARNGB;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.sachin.TheraSyncUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.registerUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = NO;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
@@ -639,50 +547,50 @@
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = TheraSync;
+				TEST_TARGET_NAME = register;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		531A8C0B2EBA029E00F2EF8A /* Build configuration list for PBXProject "TheraSync" */ = {
+		293FF5CF2EBD9D5F00EED650 /* Build configuration list for PBXProject "register" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				531A8C3C2EBA029F00F2EF8A /* Debug */,
-				531A8C3D2EBA029F00F2EF8A /* Release */,
+				293FF6002EBD9D6000EED650 /* Debug */,
+				293FF6012EBD9D6000EED650 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		531A8C392EBA029F00F2EF8A /* Build configuration list for PBXNativeTarget "TheraSync" */ = {
+		293FF5FD2EBD9D6000EED650 /* Build configuration list for PBXNativeTarget "register" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				531A8C3A2EBA029F00F2EF8A /* Debug */,
-				531A8C3B2EBA029F00F2EF8A /* Release */,
+				293FF5FE2EBD9D6000EED650 /* Debug */,
+				293FF5FF2EBD9D6000EED650 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		531A8C3E2EBA029F00F2EF8A /* Build configuration list for PBXNativeTarget "TheraSyncTests" */ = {
+		293FF6022EBD9D6000EED650 /* Build configuration list for PBXNativeTarget "registerTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				531A8C3F2EBA029F00F2EF8A /* Debug */,
-				531A8C402EBA029F00F2EF8A /* Release */,
+				293FF6032EBD9D6000EED650 /* Debug */,
+				293FF6042EBD9D6000EED650 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		531A8C412EBA029F00F2EF8A /* Build configuration list for PBXNativeTarget "TheraSyncUITests" */ = {
+		293FF6052EBD9D6000EED650 /* Build configuration list for PBXNativeTarget "registerUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				531A8C422EBA029F00F2EF8A /* Debug */,
-				531A8C432EBA029F00F2EF8A /* Release */,
+				293FF6062EBD9D6000EED650 /* Debug */,
+				293FF6072EBD9D6000EED650 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 531A8C082EBA029E00F2EF8A /* Project object */;
+	rootObject = 293FF5CC2EBD9D5F00EED650 /* Project object */;
 }
