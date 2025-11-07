@@ -26,7 +26,6 @@
 /* Begin PBXFileReference section */
 		29664CA02EBD13BD00FCE105 /* OT main.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = "OT main.xcodeproj"; sourceTree = "<group>"; };
 		29DB339F2EBD945C00D4F881 /* Register Screen.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = "Register Screen.xcodeproj"; sourceTree = "<group>"; };
-		29DB34402EBD965F00D4F881 /* OT main.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = "OT main.xcodeproj"; sourceTree = "<group>"; };
 		29FE79052EBD19670081E736 /* Register Screen.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = "Register Screen.xcodeproj"; sourceTree = "<group>"; };
 		531A8C102EBA029E00F2EF8A /* TheraSync.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheraSync.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		531A8C262EBA029F00F2EF8A /* TheraSyncTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TheraSyncTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -97,13 +96,6 @@
 			sourceTree = "<group>";
 		};
 		29DB33AB2EBD945C00D4F881 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		29DB34422EBD965F00D4F881 /* Products */ = {
 			isa = PBXGroup;
 			children = (
 			);
@@ -247,10 +239,6 @@
 				{
 					ProductGroup = 29664CA22EBD13BD00FCE105 /* Products */;
 					ProjectRef = 29664CA02EBD13BD00FCE105 /* OT main.xcodeproj */;
-				},
-				{
-					ProductGroup = 29DB34422EBD965F00D4F881 /* Products */;
-					ProjectRef = 29DB34402EBD965F00D4F881 /* OT main.xcodeproj */;
 				},
 				{
 					ProductGroup = 29FE79072EBD19670081E736 /* Products */;
