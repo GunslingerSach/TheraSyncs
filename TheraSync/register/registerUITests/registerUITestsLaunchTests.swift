@@ -1,13 +1,13 @@
 //
-//  Register_ScreenUITestsLaunchTests.swift
-//  Register ScreenUITests
+//  registerUITestsLaunchTests.swift
+//  registerUITests
 //
-//  Created by Garvit Pareek on 06/11/2025.
+//  Created by Garvit Pareek on 07/11/2025.
 //
 
 import XCTest
 
-final class Register_ScreenUITestsLaunchTests: XCTestCase {
+final class registerUITestsLaunchTests: XCTestCase {
 
     override class var runsForEachTargetApplicationUIConfiguration: Bool {
         true

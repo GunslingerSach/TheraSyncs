@@ -7,75 +7,75 @@
 	objects = {
 
 /* Begin PBXContainerItemProxy section */
-		29664C192EBBF1ED00FCE105 /* PBXContainerItemProxy */ = {
+		293FF5EB2EBD9D6000EED650 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 29664BFA2EBBF1ED00FCE105 /* Project object */;
+			containerPortal = 293FF5CC2EBD9D5F00EED650 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 29664C012EBBF1ED00FCE105;
-			remoteInfo = "Register Screen";
+			remoteGlobalIDString = 293FF5D32EBD9D5F00EED650;
+			remoteInfo = register;
 		};
-		29664C232EBBF1ED00FCE105 /* PBXContainerItemProxy */ = {
+		293FF5F52EBD9D6000EED650 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 29664BFA2EBBF1ED00FCE105 /* Project object */;
+			containerPortal = 293FF5CC2EBD9D5F00EED650 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 29664C012EBBF1ED00FCE105;
-			remoteInfo = "Register Screen";
+			remoteGlobalIDString = 293FF5D32EBD9D5F00EED650;
+			remoteInfo = register;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		29664C022EBBF1ED00FCE105 /* Register Screen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Register Screen.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		29664C182EBBF1ED00FCE105 /* Register ScreenTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Register ScreenTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		29664C222EBBF1ED00FCE105 /* Register ScreenUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Register ScreenUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		293FF5D42EBD9D5F00EED650 /* register.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = register.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		293FF5EA2EBD9D6000EED650 /* registerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = registerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		293FF5F42EBD9D6000EED650 /* registerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = registerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		29664C2A2EBBF1ED00FCE105 /* Exceptions for "Register Screen" folder in "Register Screen" target */ = {
+		293FF5FC2EBD9D6000EED650 /* Exceptions for "register" folder in "register" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Info.plist,
 			);
-			target = 29664C012EBBF1ED00FCE105 /* Register Screen */;
+			target = 293FF5D32EBD9D5F00EED650 /* register */;
 		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		29664C042EBBF1ED00FCE105 /* Register Screen */ = {
+		293FF5D62EBD9D5F00EED650 /* register */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
-				29664C2A2EBBF1ED00FCE105 /* Exceptions for "Register Screen" folder in "Register Screen" target */,
+				293FF5FC2EBD9D6000EED650 /* Exceptions for "register" folder in "register" target */,
 			);
-			path = "Register Screen";
+			path = register;
 			sourceTree = "<group>";
 		};
-		29664C1B2EBBF1ED00FCE105 /* Register ScreenTests */ = {
+		293FF5ED2EBD9D6000EED650 /* registerTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "Register ScreenTests";
+			path = registerTests;
 			sourceTree = "<group>";
 		};
-		29664C252EBBF1ED00FCE105 /* Register ScreenUITests */ = {
+		293FF5F72EBD9D6000EED650 /* registerUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "Register ScreenUITests";
+			path = registerUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		29664BFF2EBBF1ED00FCE105 /* Frameworks */ = {
+		293FF5D12EBD9D5F00EED650 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		29664C152EBBF1ED00FCE105 /* Frameworks */ = {
+		293FF5E72EBD9D6000EED650 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		29664C1F2EBBF1ED00FCE105 /* Frameworks */ = {
+		293FF5F12EBD9D6000EED650 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -85,22 +85,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		29664BF92EBBF1ED00FCE105 = {
+		293FF5CB2EBD9D5F00EED650 = {
 			isa = PBXGroup;
 			children = (
-				29664C042EBBF1ED00FCE105 /* Register Screen */,
-				29664C1B2EBBF1ED00FCE105 /* Register ScreenTests */,
-				29664C252EBBF1ED00FCE105 /* Register ScreenUITests */,
-				29664C032EBBF1ED00FCE105 /* Products */,
+				293FF5D62EBD9D5F00EED650 /* register */,
+				293FF5ED2EBD9D6000EED650 /* registerTests */,
+				293FF5F72EBD9D6000EED650 /* registerUITests */,
+				293FF5D52EBD9D5F00EED650 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		29664C032EBBF1ED00FCE105 /* Products */ = {
+		293FF5D52EBD9D5F00EED650 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				29664C022EBBF1ED00FCE105 /* Register Screen.app */,
-				29664C182EBBF1ED00FCE105 /* Register ScreenTests.xctest */,
-				29664C222EBBF1ED00FCE105 /* Register ScreenUITests.xctest */,
+				293FF5D42EBD9D5F00EED650 /* register.app */,
+				293FF5EA2EBD9D6000EED650 /* registerTests.xctest */,
+				293FF5F42EBD9D6000EED650 /* registerUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -108,134 +108,134 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		29664C012EBBF1ED00FCE105 /* Register Screen */ = {
+		293FF5D32EBD9D5F00EED650 /* register */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 29664C2B2EBBF1ED00FCE105 /* Build configuration list for PBXNativeTarget "Register Screen" */;
+			buildConfigurationList = 293FF5FD2EBD9D6000EED650 /* Build configuration list for PBXNativeTarget "register" */;
 			buildPhases = (
-				29664BFE2EBBF1ED00FCE105 /* Sources */,
-				29664BFF2EBBF1ED00FCE105 /* Frameworks */,
-				29664C002EBBF1ED00FCE105 /* Resources */,
+				293FF5D02EBD9D5F00EED650 /* Sources */,
+				293FF5D12EBD9D5F00EED650 /* Frameworks */,
+				293FF5D22EBD9D5F00EED650 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				29664C042EBBF1ED00FCE105 /* Register Screen */,
+				293FF5D62EBD9D5F00EED650 /* register */,
 			);
-			name = "Register Screen";
+			name = register;
 			packageProductDependencies = (
 			);
-			productName = "Register Screen";
-			productReference = 29664C022EBBF1ED00FCE105 /* Register Screen.app */;
+			productName = register;
+			productReference = 293FF5D42EBD9D5F00EED650 /* register.app */;
 			productType = "com.apple.product-type.application";
 		};
-		29664C172EBBF1ED00FCE105 /* Register ScreenTests */ = {
+		293FF5E92EBD9D6000EED650 /* registerTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 29664C302EBBF1ED00FCE105 /* Build configuration list for PBXNativeTarget "Register ScreenTests" */;
+			buildConfigurationList = 293FF6022EBD9D6000EED650 /* Build configuration list for PBXNativeTarget "registerTests" */;
 			buildPhases = (
-				29664C142EBBF1ED00FCE105 /* Sources */,
-				29664C152EBBF1ED00FCE105 /* Frameworks */,
-				29664C162EBBF1ED00FCE105 /* Resources */,
+				293FF5E62EBD9D6000EED650 /* Sources */,
+				293FF5E72EBD9D6000EED650 /* Frameworks */,
+				293FF5E82EBD9D6000EED650 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				29664C1A2EBBF1ED00FCE105 /* PBXTargetDependency */,
+				293FF5EC2EBD9D6000EED650 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
-				29664C1B2EBBF1ED00FCE105 /* Register ScreenTests */,
+				293FF5ED2EBD9D6000EED650 /* registerTests */,
 			);
-			name = "Register ScreenTests";
+			name = registerTests;
 			packageProductDependencies = (
 			);
-			productName = "Register ScreenTests";
-			productReference = 29664C182EBBF1ED00FCE105 /* Register ScreenTests.xctest */;
+			productName = registerTests;
+			productReference = 293FF5EA2EBD9D6000EED650 /* registerTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		29664C212EBBF1ED00FCE105 /* Register ScreenUITests */ = {
+		293FF5F32EBD9D6000EED650 /* registerUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 29664C332EBBF1ED00FCE105 /* Build configuration list for PBXNativeTarget "Register ScreenUITests" */;
+			buildConfigurationList = 293FF6052EBD9D6000EED650 /* Build configuration list for PBXNativeTarget "registerUITests" */;
 			buildPhases = (
-				29664C1E2EBBF1ED00FCE105 /* Sources */,
-				29664C1F2EBBF1ED00FCE105 /* Frameworks */,
-				29664C202EBBF1ED00FCE105 /* Resources */,
+				293FF5F02EBD9D6000EED650 /* Sources */,
+				293FF5F12EBD9D6000EED650 /* Frameworks */,
+				293FF5F22EBD9D6000EED650 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				29664C242EBBF1ED00FCE105 /* PBXTargetDependency */,
+				293FF5F62EBD9D6000EED650 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
-				29664C252EBBF1ED00FCE105 /* Register ScreenUITests */,
+				293FF5F72EBD9D6000EED650 /* registerUITests */,
 			);
-			name = "Register ScreenUITests";
+			name = registerUITests;
 			packageProductDependencies = (
 			);
-			productName = "Register ScreenUITests";
-			productReference = 29664C222EBBF1ED00FCE105 /* Register ScreenUITests.xctest */;
+			productName = registerUITests;
+			productReference = 293FF5F42EBD9D6000EED650 /* registerUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		29664BFA2EBBF1ED00FCE105 /* Project object */ = {
+		293FF5CC2EBD9D5F00EED650 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 2610;
 				LastUpgradeCheck = 2610;
 				TargetAttributes = {
-					29664C012EBBF1ED00FCE105 = {
+					293FF5D32EBD9D5F00EED650 = {
 						CreatedOnToolsVersion = 26.1;
 					};
-					29664C172EBBF1ED00FCE105 = {
+					293FF5E92EBD9D6000EED650 = {
 						CreatedOnToolsVersion = 26.1;
-						TestTargetID = 29664C012EBBF1ED00FCE105;
+						TestTargetID = 293FF5D32EBD9D5F00EED650;
 					};
-					29664C212EBBF1ED00FCE105 = {
+					293FF5F32EBD9D6000EED650 = {
 						CreatedOnToolsVersion = 26.1;
-						TestTargetID = 29664C012EBBF1ED00FCE105;
+						TestTargetID = 293FF5D32EBD9D5F00EED650;
 					};
 				};
 			};
-			buildConfigurationList = 29664BFD2EBBF1ED00FCE105 /* Build configuration list for PBXProject "Register Screen" */;
+			buildConfigurationList = 293FF5CF2EBD9D5F00EED650 /* Build configuration list for PBXProject "register" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
 			);
-			mainGroup = 29664BF92EBBF1ED00FCE105;
+			mainGroup = 293FF5CB2EBD9D5F00EED650;
 			minimizedProjectReferenceProxies = 1;
 			preferredProjectObjectVersion = 77;
-			productRefGroup = 29664C032EBBF1ED00FCE105 /* Products */;
+			productRefGroup = 293FF5D52EBD9D5F00EED650 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				29664C012EBBF1ED00FCE105 /* Register Screen */,
-				29664C172EBBF1ED00FCE105 /* Register ScreenTests */,
-				29664C212EBBF1ED00FCE105 /* Register ScreenUITests */,
+				293FF5D32EBD9D5F00EED650 /* register */,
+				293FF5E92EBD9D6000EED650 /* registerTests */,
+				293FF5F32EBD9D6000EED650 /* registerUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		29664C002EBBF1ED00FCE105 /* Resources */ = {
+		293FF5D22EBD9D5F00EED650 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		29664C162EBBF1ED00FCE105 /* Resources */ = {
+		293FF5E82EBD9D6000EED650 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		29664C202EBBF1ED00FCE105 /* Resources */ = {
+		293FF5F22EBD9D6000EED650 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -245,21 +245,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		29664BFE2EBBF1ED00FCE105 /* Sources */ = {
+		293FF5D02EBD9D5F00EED650 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		29664C142EBBF1ED00FCE105 /* Sources */ = {
+		293FF5E62EBD9D6000EED650 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		29664C1E2EBBF1ED00FCE105 /* Sources */ = {
+		293FF5F02EBD9D6000EED650 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -269,20 +269,20 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		29664C1A2EBBF1ED00FCE105 /* PBXTargetDependency */ = {
+		293FF5EC2EBD9D6000EED650 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 29664C012EBBF1ED00FCE105 /* Register Screen */;
-			targetProxy = 29664C192EBBF1ED00FCE105 /* PBXContainerItemProxy */;
+			target = 293FF5D32EBD9D5F00EED650 /* register */;
+			targetProxy = 293FF5EB2EBD9D6000EED650 /* PBXContainerItemProxy */;
 		};
-		29664C242EBBF1ED00FCE105 /* PBXTargetDependency */ = {
+		293FF5F62EBD9D6000EED650 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 29664C012EBBF1ED00FCE105 /* Register Screen */;
-			targetProxy = 29664C232EBBF1ED00FCE105 /* PBXContainerItemProxy */;
+			target = 293FF5D32EBD9D5F00EED650 /* register */;
+			targetProxy = 293FF5F52EBD9D6000EED650 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		29664C2C2EBBF1ED00FCE105 /* Debug */ = {
+		293FF5FE2EBD9D6000EED650 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -291,7 +291,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 9Q2N5ARNGB;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Register Screen/Info.plist";
+				INFOPLIST_FILE = register/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -302,7 +302,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.example.Register-Screen";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.register;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
@@ -314,7 +314,7 @@
 			};
 			name = Debug;
 		};
-		29664C2D2EBBF1ED00FCE105 /* Release */ = {
+		293FF5FF2EBD9D6000EED650 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -323,7 +323,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 9Q2N5ARNGB;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Register Screen/Info.plist";
+				INFOPLIST_FILE = register/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -334,7 +334,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.example.Register-Screen";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.register;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
@@ -346,7 +346,7 @@
 			};
 			name = Release;
 		};
-		29664C2E2EBBF1ED00FCE105 /* Debug */ = {
+		293FF6002EBD9D6000EED650 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -410,7 +410,7 @@
 			};
 			name = Debug;
 		};
-		29664C2F2EBBF1ED00FCE105 /* Release */ = {
+		293FF6012EBD9D6000EED650 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -467,7 +467,7 @@
 			};
 			name = Release;
 		};
-		29664C312EBBF1ED00FCE105 /* Debug */ = {
+		293FF6032EBD9D6000EED650 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -477,7 +477,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 26.1;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.example.Register-ScreenTests";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.registerTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = NO;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
@@ -485,11 +485,11 @@
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Register Screen.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Register Screen";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/register.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/register";
 			};
 			name = Debug;
 		};
-		29664C322EBBF1ED00FCE105 /* Release */ = {
+		293FF6042EBD9D6000EED650 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -499,7 +499,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 26.1;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.example.Register-ScreenTests";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.registerTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = NO;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
@@ -507,11 +507,11 @@
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Register Screen.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Register Screen";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/register.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/register";
 			};
 			name = Release;
 		};
-		29664C342EBBF1ED00FCE105 /* Debug */ = {
+		293FF6062EBD9D6000EED650 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -519,7 +519,7 @@
 				DEVELOPMENT_TEAM = 9Q2N5ARNGB;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.example.Register-ScreenUITests";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.registerUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = NO;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
@@ -527,11 +527,11 @@
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "Register Screen";
+				TEST_TARGET_NAME = register;
 			};
 			name = Debug;
 		};
-		29664C352EBBF1ED00FCE105 /* Release */ = {
+		293FF6072EBD9D6000EED650 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -539,7 +539,7 @@
 				DEVELOPMENT_TEAM = 9Q2N5ARNGB;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.example.Register-ScreenUITests";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.registerUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = NO;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
@@ -547,50 +547,50 @@
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "Register Screen";
+				TEST_TARGET_NAME = register;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		29664BFD2EBBF1ED00FCE105 /* Build configuration list for PBXProject "Register Screen" */ = {
+		293FF5CF2EBD9D5F00EED650 /* Build configuration list for PBXProject "register" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				29664C2E2EBBF1ED00FCE105 /* Debug */,
-				29664C2F2EBBF1ED00FCE105 /* Release */,
+				293FF6002EBD9D6000EED650 /* Debug */,
+				293FF6012EBD9D6000EED650 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		29664C2B2EBBF1ED00FCE105 /* Build configuration list for PBXNativeTarget "Register Screen" */ = {
+		293FF5FD2EBD9D6000EED650 /* Build configuration list for PBXNativeTarget "register" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				29664C2C2EBBF1ED00FCE105 /* Debug */,
-				29664C2D2EBBF1ED00FCE105 /* Release */,
+				293FF5FE2EBD9D6000EED650 /* Debug */,
+				293FF5FF2EBD9D6000EED650 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		29664C302EBBF1ED00FCE105 /* Build configuration list for PBXNativeTarget "Register ScreenTests" */ = {
+		293FF6022EBD9D6000EED650 /* Build configuration list for PBXNativeTarget "registerTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				29664C312EBBF1ED00FCE105 /* Debug */,
-				29664C322EBBF1ED00FCE105 /* Release */,
+				293FF6032EBD9D6000EED650 /* Debug */,
+				293FF6042EBD9D6000EED650 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		29664C332EBBF1ED00FCE105 /* Build configuration list for PBXNativeTarget "Register ScreenUITests" */ = {
+		293FF6052EBD9D6000EED650 /* Build configuration list for PBXNativeTarget "registerUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				29664C342EBBF1ED00FCE105 /* Debug */,
-				29664C352EBBF1ED00FCE105 /* Release */,
+				293FF6062EBD9D6000EED650 /* Debug */,
+				293FF6072EBD9D6000EED650 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 29664BFA2EBBF1ED00FCE105 /* Project object */;
+	rootObject = 293FF5CC2EBD9D5F00EED650 /* Project object */;
 }

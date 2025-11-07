@@ -1,14 +1,14 @@
 //
-//  Register_ScreenTests.swift
-//  Register ScreenTests
+//  registerTests.swift
+//  registerTests
 //
-//  Created by Garvit Pareek on 06/11/2025.
+//  Created by Garvit Pareek on 07/11/2025.
 //
 
 import XCTest
-@testable import Register_Screen
+@testable import register
 
-final class Register_ScreenTests: XCTestCase {
+final class registerTests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
