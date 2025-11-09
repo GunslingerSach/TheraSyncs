@@ -20,9 +20,7 @@ class CreateNewPasswordViewController: UIViewController {
     
     @IBOutlet weak var submitButton: UIButton!
     
-    // (Optional: for show/hide password buttons)
-    @IBOutlet weak var newPasswordToggleButton: UIButton!
-    @IBOutlet weak var confirmPasswordToggleButton: UIButton!
+    // (We've removed the outlets for the "eye" buttons)
 
     private let gradientLayer = CAGradientLayer()
 
@@ -33,9 +31,9 @@ class CreateNewPasswordViewController: UIViewController {
         setupBackground()
         styleUI()
         
-        // Make passwords secure by default
+        // Make passwords visible (as requested)
         newPasswordField.isSecureTextEntry = false
-        confirmPasswordField.isSecureTextEntry = true
+        confirmPasswordField.isSecureTextEntry = false
     }
 
     override func viewDidLayoutSubviews() {
@@ -56,20 +54,12 @@ class CreateNewPasswordViewController: UIViewController {
     }
     
     private func styleUI() {
-        // --- Style Labels and Buttons ---
         titleLabel.textColor = .white
         backButton.tintColor = .white
         
-        // --- Style Text Fields ---
         styleTextField(newPasswordField, placeholder: "New Password")
         styleTextField(confirmPasswordField, placeholder: "Confirm Password")
-        
-        // --- Style Toggle Buttons (Optional) ---
-        // (Set the image to 'eye.slash' in storyboard)
-        //newPasswordToggleButton.tintColor = .gray
-        //confirmPasswordToggleButton.tintColor = .gray
 
-        // --- Style Submit Button ---
         submitButton.backgroundColor = .systemBlue
         submitButton.setTitleColor(.white, for: .normal)
         submitButton.layer.cornerRadius = 14
@@ -82,15 +72,11 @@ class CreateNewPasswordViewController: UIViewController {
         textField.borderStyle = .none
         textField.layer.cornerRadius = 14
         textField.placeholder = placeholder
-        textField.isSecureTextEntry = true // Make it a password field
+        textField.isSecureTextEntry = false // Make it a regular text field
         
-        // Add padding
         let paddingView = UIView(frame: CGRect(x: 0, y: 0, width: 15, height: 50))
         textField.leftView = paddingView
         textField.leftViewMode = .always
-        
-        // (This assumes you have a container view for the right-side toggle button)
-        // If not, you can set textField.rightView instead
     }
 
     // MARK: - Actions
@@ -106,69 +92,51 @@ class CreateNewPasswordViewController: UIViewController {
         guard let newPassword = newPasswordField.text, !newPassword.isEmpty,
               let confirmPassword = confirmPasswordField.text, !confirmPassword.isEmpty else {
             print("Error: Fields cannot be empty.")
-            // TODO: Show an error message to the user
             return
         }
         
         guard newPassword == confirmPassword else {
             print("Error: Passwords do not match.")
-            // TODO: Show an error message to the user
             return
         }
         
-        // ---
-        // 1. TODO: Add logic to save the newPassword to your server
-        // ---
+        // 1. TODO: Add logic to save the newPassword
         
         
         // 2. On success, reset the app back to the Login screen.
         
-        // --- ASSUMPTIONS (Confirm with your teammate!) ---
-        let loginStoryboardName = "Login" // <-- Your teammate's storyboard *file* name
-        let loginVCIdentifier = "LoginViewController" // <-- Your teammate's *Storyboard ID*
+        // --- THIS IS THE FINAL FIX ---
+        // We use the file names we found from your screenshot.
+        
+        let loginStoryboardName = "LoginViewController" // The .storyboard file
+        let loginVCIdentifier = "LoginViewController"   // The Storyboard ID
         
         // ---
         
         let storyboard = UIStoryboard(name: loginStoryboardName, bundle: nil)
         
-        guard let loginVC = storyboard.instantiateViewController(withIdentifier: loginVCIdentifier) as? UIViewController else {
+        // Cast to LoginViewController to fix the warning
+        guard let loginVC = storyboard.instantiateViewController(withIdentifier: loginVCIdentifier) as? LoginViewController else {
             print("---")
             print("Error: Could not find '\(loginVCIdentifier)' in '\(loginStoryboardName).storyboard'.")
-            print("This is OK if your teammate hasn't added their file yet. Your code is ready!")
+            print("Check that the Storyboard ID is set in your teammate's storyboard file.")
             print("---")
             return
         }
 
         // --- The Clean Reset ---
-        // This finds the main app window and replaces its root
-        // controller with the Login screen. This is the correct
-        // way to "log out" or "reset" the app flow.
-        
         if let window = self.view.window {
             window.rootViewController = loginVC
-            // Add a nice fade transition
             UIView.transition(with: window,
                               duration: 0.3,
                               options: .transitionCrossDissolve,
                               animations: nil,
                               completion: nil)
         } else {
-            // Fallback (e.g., if window isn't available)
             loginVC.modalPresentationStyle = .fullScreen
             self.present(loginVC, animated: true, completion: nil)
         }
     }
     
-    // (Optional: Connect these to your 'eye' buttons)
-    @IBAction func toggleNewPasswordVisibility(_ sender: UIButton) {
-        newPasswordField.isSecureTextEntry.toggle()
-        let imageName = newPasswordField.isSecureTextEntry ? "eye.slash" : "eye"
-        sender.setImage(UIImage(systemName: imageName), for: .normal)
-    }
-    
-    @IBAction func toggleConfirmPasswordVisibility(_ sender: UIButton) {
-        confirmPasswordField.isSecureTextEntry.toggle()
-        let imageName = confirmPasswordField.isSecureTextEntry ? "eye.slash" : "eye"
-        sender.setImage(UIImage(systemName: imageName), for: .normal)
-    }
+// (All "eye" button actions have been removed)
 }

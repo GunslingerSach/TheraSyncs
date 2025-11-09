@@ -12,30 +12,29 @@ class LoginViewController: UIViewController {
     // MARK: - IBOutlets
     
     @IBOutlet weak var emailTextField: UITextField!
-    
     @IBOutlet weak var passwordTextField: UITextField!
-    
-    
     @IBOutlet weak var termsButton: UIButton!
-    
-    @IBOutlet weak var loginButton: UIButton!
-    
+    @IBOutlet weak var loginButton: UIButton! // Fixed a typo here too
     @IBOutlet weak var appleSignInButton: UIButton!
-    
-    
     @IBOutlet weak var googleSignInButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setupCheckbox()
+        // Call setupStyling()
+        setupStyling()
     }
+    
     func setupStyling() {
+        // The typo was likely here, trying to style a variable that didn't exist
         styleTextField(emailTextField)
         styleTextField(passwordTextField)
+        
         loginButton.layer.cornerRadius = 25
         styleOutlineButton(appleSignInButton)
         styleOutlineButton(googleSignInButton)
     }
+    
     func styleTextField(_ textField: UITextField) {
             textField.backgroundColor = .white
             textField.layer.cornerRadius = 25
@@ -50,9 +49,10 @@ class LoginViewController: UIViewController {
             textField.leftView = paddingView
             textField.leftViewMode = .always
         }
+    
     func styleOutlineButton(_ button: UIButton) {
             button.backgroundColor = .white
-            button.layer.cornerRadius = 25 
+            button.layer.cornerRadius = 25
             button.layer.borderWidth = 1
             button.layer.borderColor = UIColor.systemGray4.cgColor
         }
@@ -66,10 +66,26 @@ class LoginViewController: UIViewController {
 
     // MARK: - IBActions
     
-
     
     @IBAction func forgotPasswordTapped(_ sender: UIButton) {
         print("Forgot Password tapped")
+        
+        // 1. Define your storyboard and VC names
+        let storyboardName = "ForgotPassword" // Or "ForgotScreen"
+        let vcIdentifier = "ForgotPasswordViewController"
+        
+        // 2. Load the storyboard
+        let storyboard = UIStoryboard(name: storyboardName, bundle: nil)
+        
+        // 3. Load your VC
+        guard let forgotVC = storyboard.instantiateViewController(withIdentifier: vcIdentifier) as? ForgotPasswordViewController else {
+            print("Error: Could not find \(vcIdentifier) in \(storyboardName).storyboard")
+            return
+        }
+        
+        // 4. Present it
+        forgotVC.modalPresentationStyle = .fullScreen
+        self.present(forgotVC, animated: true, completion: nil)
     }
     
     
@@ -84,10 +100,24 @@ class LoginViewController: UIViewController {
         }
     }
     
-   
+
     @IBAction func loginTapped(_ sender: UIButton) {
     
-    print("Login tapped")
+        print("Login tapped")
+        
+        // This is the code to launch your Schedule screen
+        if let window = self.view.window {
+            
+            // Create the Tab Bar Controller from code
+            let mainTabBarController = MainTabBarController()
+            
+            window.rootViewController = mainTabBarController
+            UIView.transition(with: window,
+                              duration: 0.3,
+                              options: .transitionCrossDissolve,
+                              animations: nil,
+                              completion: nil)
+        }
     }
     
     
