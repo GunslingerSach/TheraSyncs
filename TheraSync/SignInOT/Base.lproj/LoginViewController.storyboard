@@ -99,7 +99,7 @@
                                                 </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I agree to TheraSync's Terms &amp; Conditions" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1UI-Om-KtQ">
-                                                <rect key="frame" x="60" y="8" width="275.33333333333331" height="41"/>
+                                                <rect key="frame" x="58" y="5" width="275.33333333333331" height="41"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -111,14 +111,15 @@
                                             <constraint firstAttribute="bottom" secondItem="l52-WI-dD7" secondAttribute="bottom" constant="7" id="NwV-Nb-P8v"/>
                                             <constraint firstAttribute="width" constant="353" id="TnX-0v-zGz"/>
                                             <constraint firstAttribute="bottom" secondItem="l52-WI-dD7" secondAttribute="bottom" constant="7" id="UJE-xd-NxB"/>
+                                            <constraint firstAttribute="bottom" secondItem="1UI-Om-KtQ" secondAttribute="bottom" constant="4" id="WPY-1A-CZH"/>
                                             <constraint firstItem="l52-WI-dD7" firstAttribute="leading" secondItem="5Eg-qq-WMP" secondAttribute="leading" constant="11" id="XfU-sn-F4E"/>
                                             <constraint firstItem="l52-WI-dD7" firstAttribute="top" secondItem="5Eg-qq-WMP" secondAttribute="top" constant="8" id="a3V-u9-jJv"/>
                                             <constraint firstAttribute="trailing" secondItem="l52-WI-dD7" secondAttribute="trailing" constant="315" id="bDb-1h-8T0"/>
                                             <constraint firstItem="l52-WI-dD7" firstAttribute="top" secondItem="5Eg-qq-WMP" secondAttribute="top" constant="8" id="dyh-fb-hoq"/>
-                                            <constraint firstItem="1UI-Om-KtQ" firstAttribute="leading" secondItem="l52-WI-dD7" secondAttribute="trailing" id="hIc-01-NhC"/>
+                                            <constraint firstItem="1UI-Om-KtQ" firstAttribute="leading" secondItem="5Eg-qq-WMP" secondAttribute="leading" constant="58" id="lNQ-ra-hlK"/>
                                             <constraint firstItem="l52-WI-dD7" firstAttribute="leading" secondItem="5Eg-qq-WMP" secondAttribute="leading" constant="11" id="mXZ-VU-EFT"/>
-                                            <constraint firstAttribute="bottom" secondItem="1UI-Om-KtQ" secondAttribute="bottom" constant="1" id="ssT-Cw-4xF"/>
-                                            <constraint firstItem="1UI-Om-KtQ" firstAttribute="top" secondItem="5Eg-qq-WMP" secondAttribute="top" constant="8" id="zBz-fh-MBl"/>
+                                            <constraint firstItem="1UI-Om-KtQ" firstAttribute="top" secondItem="5Eg-qq-WMP" secondAttribute="top" constant="5" id="mgY-7F-YJm"/>
+                                            <constraint firstAttribute="trailing" secondItem="1UI-Om-KtQ" secondAttribute="trailing" constant="19.670000000000002" id="sg7-Or-V2j"/>
                                         </constraints>
                                     </view>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CrQ-vQ-4E4">

@@ -115,7 +115,10 @@ class CreateNewPasswordViewController: UIViewController {
         
         let storyboard = UIStoryboard(name: loginStoryboardName, bundle: nil)
         
-        // Cast to LoginViewController to fix the warning
+        // ---
+        // !!! --- THIS IS THE FIX for the warning on line 119 --- !!!
+        // We cast to LoginViewController, not UIViewController
+        // ---
         guard let loginVC = storyboard.instantiateViewController(withIdentifier: loginVCIdentifier) as? LoginViewController else {
             print("---")
             print("Error: Could not find '\(loginVCIdentifier)' in '\(loginStoryboardName).storyboard'.")

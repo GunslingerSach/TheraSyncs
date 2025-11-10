@@ -73,13 +73,18 @@ class MainTabBarController: UITabBarController {
         let navController = UINavigationController(rootViewController: viewController)
         navController.tabBarItem = UITabBarItem(title: title, image: UIImage(systemName: image), tag: 0)
         
-        // Set the nav bar to have the same gradient as your other screens
+        // Set the nav bar to be transparent
         let appearance = UINavigationBarAppearance()
         appearance.configureWithTransparentBackground()
         
-        // Make the nav bar transparent so the gradient shows through
-        let topColor = UIColor(red: 69/255, green: 147/255, blue: 255/255, alpha: 1.0)
-        appearance.backgroundColor = topColor
+        // ---
+        // !!! --- THIS IS THE FIX --- !!!
+        // ---
+        // By commenting out this line, the nav bar becomes fully transparent,
+        // letting your view's gradient show through.
+        // let topColor = UIColor(red: 69/255, green: 147/255, blue: 255/255, alpha: 1.0)
+        // appearance.backgroundColor = topColor
+        // ---
         
         // This makes the title "Appointment", "Patients", etc. big and white
         appearance.largeTitleTextAttributes = [.foregroundColor: UIColor.white]

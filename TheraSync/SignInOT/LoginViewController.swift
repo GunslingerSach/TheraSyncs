@@ -18,7 +18,6 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var appleSignInButton: UIButton!
     @IBOutlet weak var googleSignInButton: UIButton!
     
-    // (You will need to add a new outlet for your "Show Terms" button)
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,9 +26,13 @@ class LoginViewController: UIViewController {
     }
     
     func setupStyling() {
+        // We explicitly set the text visibility here
+        emailTextField.isSecureTextEntry = false
+        passwordTextField.isSecureTextEntry = true
+        
         styleTextField(emailTextField)
         styleTextField(passwordTextField)
-        loginButton.layer.cornerRadius = 25
+        loginButton.layer.cornerRadius = 26
         styleOutlineButton(appleSignInButton)
         styleOutlineButton(googleSignInButton)
     }
@@ -91,6 +94,34 @@ class LoginViewController: UIViewController {
     @IBAction func loginTapped(_ sender: UIButton) {
         print("Login tapped")
         
+        // 1. VALIDATE THE INPUT (NOW WITH ALERTS)
+        guard let email = emailTextField.text, !email.isEmpty else {
+            showAlert(message: "Email field cannot be empty.")
+            return
+        }
+        
+        guard let password = passwordTextField.text, !password.isEmpty else {
+            showAlert(message: "Password field cannot be empty.")
+            return
+        }
+        
+        // Use the validation code!
+        guard email.validateEmailId() else {
+            showAlert(message: "Please enter a valid email address.")
+            return
+        }
+        
+        guard password.validatePassword() else {
+            showAlert(message: "Password must be at least 8 characters long and contain one letter and one number.")
+            return
+        }
+        
+        // 2. IF VALIDATION SUCCEEDS, LOG IN
+        print("Login validation successful!")
+        
+        // TODO: Add real login logic here (e.g., check with Firebase)
+        
+        // On success, go to the main app
         if let window = self.view.window {
             let mainTabBarController = MainTabBarController()
             window.rootViewController = mainTabBarController
@@ -115,11 +146,30 @@ class LoginViewController: UIViewController {
     
     @IBAction func createAccountTapped(_ sender: UIButton) {
         print("Create Account tapped")
+        
+        // ---
+        // !!! --- THIS IS THE NEWLY ADDED CODE --- !!!
+        // ---
+        
+        // 1. Get the current storyboard (which is LoginViewController.storyboard)
+        guard let storyboard = self.storyboard else {
+            print("Error: Could not find the storyboard.")
+            return
+        }
+        
+        // 2. Instantiate the new VC using its Storyboard ID
+        if let regVC = storyboard.instantiateViewController(withIdentifier: "RegistrationViewController") as? RegistrationViewController {
+            
+            // 3. Present it
+            regVC.modalPresentationStyle = .fullScreen
+            self.present(regVC, animated: true, completion: nil)
+        } else {
+            print("Error: Could not find 'RegistrationViewController' in this storyboard.")
+        }
+        // --- END OF NEW CODE ---
     }
     
-    // ---
-    // !!! --- THIS IS THE NEW FUNCTION --- !!!
-    // ---
+    
     @IBAction func showTermsTapped(_ sender: UIButton) {
         print("Show Terms Tapped")
         
@@ -138,5 +188,51 @@ class LoginViewController: UIViewController {
         } else {
             print("Error: Could not find 'TermsAndConditionsViewController' in this storyboard.")
         }
+    }
+    
+    
+    private func showAlert(title: String = "Login Error", message: String) {
+        // Create the alert controller
+        let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        
+        // Create the "OK" button
+        let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+        
+        // Add the button to the alert
+        alertController.addAction(okAction)
+        
+        // Present the alert
+        self.present(alertController, animated: true, completion: nil)
+    }
+}
+
+//
+// MARK: - String Validation Extension
+//
+extension String{
+    
+    func validateEmailId() -> Bool {
+        let emailRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,4}"
+        return applyPredicateOnRegex(regexStr: emailRegEx)
+    }
+    
+    func validatePassword(mini: Int = 8, max: Int = 8) -> Bool {
+        //Minimum 8 characters at least 1 Alphabet and 1 Number:
+        var passRegEx = ""
+        if mini >= max{
+            passRegEx = "^(?=.*[A-Za-z])(?=.*\\d)[A-Za-z\\d]{\(mini),}$"
+        }else{
+            passRegEx = "^(?=.*[A-Za-z])(?=.*\\d)[A-Za-z\\d]{\(mini),\(max)}$"
+        }
+        return applyPredicateOnRegex(regexStr: passRegEx)
+    }
+    
+   
+    
+    func applyPredicateOnRegex(regexStr: String) -> Bool{
+        let trimmedString = self.trimmingCharacters(in: .whitespaces)
+        let validateOtherString = NSPredicate(format: "SELF MATCHES %@", regexStr)
+        let isValidateOtherString = validateOtherString.evaluate(with: trimmedString)
+        return isValidateOtherString
     }
 }

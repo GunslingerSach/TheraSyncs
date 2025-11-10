@@ -15,14 +15,18 @@ class ProfileViewController: UIViewController, UITableViewDataSource, UITableVie
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var tableView: UITableView!
     
-    // 3. This is the data for your list
-    let settingsOptions = [
+    // ---
+    // !!! --- THIS IS THE FIX (Part 1) --- !!!
+    // ---
+    // We've merged all menu items into one array.
+    let menuItems = [
         "Update Profile",
         "Settings",
         "Terms & Conditions",
-        "About Us"
+        "About Us",
+        "Log out"
     ]
-    let logoutOption = "Log out"
+    // (We don't need the separate 'logoutOption' variable anymore)
     
     private let gradientLayer = CAGradientLayer()
     
@@ -47,8 +51,8 @@ class ProfileViewController: UIViewController, UITableViewDataSource, UITableVie
         super.viewDidLayoutSubviews()
         gradientLayer.frame = view.bounds
         
-        // This must be here to make the image view a perfect circle
-        profileImageView.layer.cornerRadius = profileImageView.frame.width / 2
+        // Make the image view a perfect circle based on its current size
+        profileImageView.layer.cornerRadius =  profileImageView.bounds.width / 2
     }
     
     private func styleProfileImage() {
@@ -62,7 +66,10 @@ class ProfileViewController: UIViewController, UITableViewDataSource, UITableVie
         let topColor = UIColor(red: 69/255, green: 147/255, blue: 255/255, alpha: 1.0).cgColor
         let bottomColor = UIColor.systemGray6.cgColor
         gradientLayer.colors = [topColor, bottomColor]
-        gradientLayer.locations = [0.0, 0.4]
+        
+        // This is the 60% fade you wanted
+        gradientLayer.locations = [0.0, 0.6]
+        
         gradientLayer.frame = view.bounds
         view.layer.insertSublayer(gradientLayer, at: 0)
         
@@ -72,47 +79,60 @@ class ProfileViewController: UIViewController, UITableViewDataSource, UITableVie
     
     // MARK: - TableView Functions
     
-    // We have 2 sections: one for settings, one for "Log out"
+    // ---
+    // !!! --- THIS IS THE FIX (Part 2) --- !!!
+    // ---
+    // We now only have 1 section.
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 2
+        return 1
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // If section 0, return count of settings. If section 1, return 1.
-        return (section == 0) ? settingsOptions.count : 1
+        // Just return the total count of our new array
+        return menuItems.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        // 4. Get the cell using the Identifier we just typed
+        // Get the cell
         let cell = tableView.dequeueReusableCell(withIdentifier: "SettingsCell", for: indexPath)
         
-        // 5. Configure the cell (it's much simpler now)
-        if indexPath.section == 0 {
-            // This is the "Settings" section
-            cell.textLabel?.text = settingsOptions[indexPath.row]
-            cell.textLabel?.textColor = .black
+        // ---
+        // !!! --- THIS IS THE FIX (Part 3) --- !!!
+        // ---
+        // Get the item for the current row
+        let item = menuItems[indexPath.row]
+        cell.textLabel?.text = item
+        
+        // Check *what* the item is and style it
+        if item == "Log out" {
+            // This is the "Log out" row
+            cell.textLabel?.textColor = .systemRed
+            cell.accessoryType = .none // "Log out" shouldn't have an arrow
         } else {
-            // This is the "Log out" section
-            cell.textLabel?.text = logoutOption
-            cell.textLabel?.textColor = .systemRed // Make "Log out" red
+            // This is a normal settings row
+            cell.textLabel?.textColor = .black
+            cell.accessoryType = .disclosureIndicator // Add the '>' arrow
         }
         
         return cell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        // 6. Add logic for tapping
+        // Add logic for tapping
         tableView.deselectRow(at: indexPath, animated: true)
         
-        if indexPath.section == 0 {
-            let selectedOption = settingsOptions[indexPath.row]
-            print("Tapped on: \(selectedOption)")
-            // TODO: Add navigation logic here
-        } else {
+        // ---
+        // !!! --- THIS IS THE FIX (Part 4) --- !!!
+        // ---
+        let selectedOption = menuItems[indexPath.row]
+        print("Tapped on: \(selectedOption)")
+
+        if selectedOption == "Log out" {
             print("Tapped on: Log out")
-            
             // TODO: Add logout logic here (go back to Login screen)
-            // (You can copy this code from your CreateNewPasswordViewController)
+        } else {
+            // This is one of the other settings
+            // TODO: Add navigation logic here
         }
     }
 }
