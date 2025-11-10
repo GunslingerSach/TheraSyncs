@@ -26,7 +26,7 @@
                         </constraints>
                     </view>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12:00 PM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="10x-Nv-Ama">
-                        <rect key="frame" x="24" y="18" width="73.666666666666671" height="20"/>
+                        <rect key="frame" x="24" y="9.3333333333333321" width="73.666666666666671" height="37.333333333333343"/>
                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -57,7 +57,7 @@
                     <constraint firstItem="vs1-k2-Qic" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="FIt-Qe-BQS"/>
                     <constraint firstItem="vs1-k2-Qic" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="QKr-nP-Ysy"/>
                     <constraint firstItem="10x-Nv-Ama" firstAttribute="leading" secondItem="vs1-k2-Qic" secondAttribute="trailing" constant="8" symbolic="YES" id="iWF-j3-N0e"/>
-                    <constraint firstItem="tnt-KP-QKy" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="kTm-Ca-1da"/>
+                    <constraint firstItem="tnt-KP-QKy" firstAttribute="firstBaseline" secondItem="10x-Nv-Ama" secondAttribute="firstBaseline" id="lR1-RA-WkV"/>
                     <constraint firstItem="tnt-KP-QKy" firstAttribute="leading" secondItem="10x-Nv-Ama" secondAttribute="trailing" constant="7.3300000000000001" id="okZ-qo-kM0"/>
                     <constraint firstAttribute="trailing" secondItem="tnt-KP-QKy" secondAttribute="trailing" constant="58.670000000000002" id="w0f-1p-d3Z"/>
                     <constraint firstItem="10x-Nv-Ama" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="18" id="wtc-6Q-sn6"/>

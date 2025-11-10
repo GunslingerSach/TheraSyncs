@@ -235,11 +235,418 @@
             </objects>
             <point key="canvasLocation" x="-19.083969465648853" y="100.70422535211269"/>
         </scene>
+        <!--Login View Controller-->
+        <scene sceneID="PgO-TU-BxC">
+            <objects>
+                <viewController id="16z-yJ-uvS" customClass="LoginViewController" customModule="TheraSync" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QXQ-2a-A4b">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="x38-b3-y1o">
+                                <rect key="frame" x="20" y="90" width="353" height="676.66666666666663"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="255" text="TheraSync" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fHo-mp-zxD">
+                                        <rect key="frame" x="0.0" y="0.0" width="353" height="40.666666666666664"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="34"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="255" text="Welcome" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bUI-2E-tpp">
+                                        <rect key="frame" x="0.0" y="56.666666666666657" width="353" height="33.666666666666657"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="255" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zk5-Io-D2M">
+                                        <rect key="frame" x="0.0" y="106.33333333333334" width="353" height="20.333333333333329"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="something@email.com" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dtp-OS-SgO">
+                                        <rect key="frame" x="0.0" y="142.66666666666666" width="353" height="50"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="rni-y0-6g3"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="emailAddress" secureTextEntry="YES" textContentType="email"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerradius">
+                                                <integer key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="layer,subLayerTransform" value="x:10,y:100,z:0"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="255" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yqM-2h-5hO">
+                                        <rect key="frame" x="0.0" y="208.66666666666669" width="353" height="20.333333333333343"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="*******" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kEy-Nj-DwG">
+                                        <rect key="frame" x="0.0" y="245" width="353" height="50"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="2nP-Hb-lFM"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SsM-6M-ob6">
+                                        <rect key="frame" x="0.0" y="311" width="353" height="34.333333333333314"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Forgot Password?"/>
+                                        <connections>
+                                            <action selector="forgotPasswordTapped:" destination="16z-yJ-uvS" eventType="touchUpInside" id="erS-Ls-174"/>
+                                        </connections>
+                                    </button>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ena-Fv-6L5">
+                                        <rect key="frame" x="0.0" y="361.33333333333331" width="353" height="50"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZQf-Zv-jck">
+                                                <rect key="frame" x="11" y="7.6666666666666856" width="49" height="35"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="49" id="NhN-XB-7u5"/>
+                                                    <constraint firstAttribute="height" constant="35" id="o64-Ii-O4w"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="checkmark.square" catalog="system"/>
+                                                <connections>
+                                                    <action selector="termsButtonTapped:" destination="16z-yJ-uvS" eventType="touchUpInside" id="8Cg-7A-keh"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="I agree to TheraSync's  " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b5V-aH-Zwh">
+                                                <rect key="frame" x="56" y="5" width="152.66666666666663" height="41"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qeb-Kf-Jog">
+                                                <rect key="frame" x="192" y="9" width="146" height="31"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Terms &amp; Conditions">
+                                                    <fontDescription key="titleFontDescription" name="SFPro-Regular" family="SF Pro" pointSize="14"/>
+                                                    <color key="baseForegroundColor" systemColor="systemBlueColor"/>
+                                                </buttonConfiguration>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="1et-36-jZP"/>
+                                            <constraint firstItem="b5V-aH-Zwh" firstAttribute="leading" secondItem="ZQf-Zv-jck" secondAttribute="trailing" id="EqF-lr-oOm"/>
+                                            <constraint firstItem="ZQf-Zv-jck" firstAttribute="leading" secondItem="ena-Fv-6L5" secondAttribute="leading" constant="11" id="JEt-3U-eMJ"/>
+                                            <constraint firstAttribute="width" constant="353" id="Pxl-pJ-v1M"/>
+                                            <constraint firstItem="b5V-aH-Zwh" firstAttribute="centerY" secondItem="ZQf-Zv-jck" secondAttribute="centerY" id="VG8-2B-fSX"/>
+                                            <constraint firstItem="b5V-aH-Zwh" firstAttribute="centerY" secondItem="ena-Fv-6L5" secondAttribute="centerY" id="VHx-K5-lre"/>
+                                            <constraint firstItem="ZQf-Zv-jck" firstAttribute="leading" secondItem="ena-Fv-6L5" secondAttribute="leading" constant="11" id="XDA-jL-pO2"/>
+                                            <constraint firstItem="b5V-aH-Zwh" firstAttribute="centerY" secondItem="Qeb-Kf-Jog" secondAttribute="centerY" id="Z2b-sm-ozh"/>
+                                            <constraint firstItem="Qeb-Kf-Jog" firstAttribute="top" secondItem="ena-Fv-6L5" secondAttribute="top" constant="10" id="dIE-MY-2pS"/>
+                                            <constraint firstItem="Qeb-Kf-Jog" firstAttribute="trailing" secondItem="ena-Fv-6L5" secondAttribute="trailingMargin" id="geP-84-KOo"/>
+                                            <constraint firstItem="b5V-aH-Zwh" firstAttribute="top" secondItem="ena-Fv-6L5" secondAttribute="top" constant="5" id="lpy-Wj-lSh"/>
+                                        </constraints>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2tE-oo-ZEZ">
+                                        <rect key="frame" x="0.0" y="427.33333333333337" width="353" height="50"/>
+                                        <color key="backgroundColor" name="AccentColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="Fsc-pr-hwr"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Login">
+                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="loginTapped:" destination="16z-yJ-uvS" eventType="touchUpInside" id="e60-NE-syG"/>
+                                        </connections>
+                                    </button>
+                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="cf9-x6-QSc">
+                                        <rect key="frame" x="0.0" y="493.33333333333337" width="353" height="1"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8NB-WN-yZp">
+                                                <rect key="frame" x="0.0" y="0.0" width="353" height="1"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Or" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QBL-YJ-FV4">
+                                                        <rect key="frame" x="155" y="-10" width="19" height="21"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemGray3Color"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="1" id="ggb-pG-fjL"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aqX-Gs-mYC">
+                                        <rect key="frame" x="0.0" y="510.33333333333337" width="353" height="50"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="kVv-Gh-4LK"/>
+                                        </constraints>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="apple.logo" catalog="system" title="Sign in with Apple" titleAlignment="center">
+                                            <color key="baseForegroundColor" systemColor="labelColor"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="appleSignInTapped:" destination="16z-yJ-uvS" eventType="touchUpInside" id="N4V-Sn-tG7"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3re-vc-UyQ">
+                                        <rect key="frame" x="0.0" y="576.33333333333337" width="353" height="50"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="y4G-rO-eN3"/>
+                                        </constraints>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="g.circle" catalog="system" title="Sign in with Google" titleAlignment="center">
+                                            <color key="baseForegroundColor" systemColor="labelColor"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="googleSignInTapped:" destination="16z-yJ-uvS" eventType="touchUpInside" id="9mA-IE-gQ6"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DrH-Ks-WyL">
+                                        <rect key="frame" x="0.0" y="642.33333333333337" width="353" height="34.333333333333371"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Create Account"/>
+                                        <connections>
+                                            <action selector="createAccountTapped:" destination="16z-yJ-uvS" eventType="touchUpInside" id="WpA-fk-7F7"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="cf9-x6-QSc" firstAttribute="top" secondItem="2tE-oo-ZEZ" secondAttribute="bottom" constant="16" id="GLa-24-c9x"/>
+                                    <constraint firstItem="SsM-6M-ob6" firstAttribute="top" secondItem="kEy-Nj-DwG" secondAttribute="bottom" constant="16" id="Obc-jI-y4v"/>
+                                    <constraint firstItem="ena-Fv-6L5" firstAttribute="top" secondItem="SsM-6M-ob6" secondAttribute="bottom" constant="16" id="QIE-Qw-vbu"/>
+                                    <constraint firstItem="2tE-oo-ZEZ" firstAttribute="top" secondItem="ena-Fv-6L5" secondAttribute="bottom" constant="16" id="zng-Mp-dgw"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="rUQ-7p-RQz"/>
+                        <color key="backgroundColor" systemColor="systemGray6Color"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="x38-b3-y1o" secondAttribute="trailing" constant="20" id="SKP-tT-tVL"/>
+                            <constraint firstItem="x38-b3-y1o" firstAttribute="top" secondItem="QXQ-2a-A4b" secondAttribute="top" constant="90" id="T7M-LG-5ee"/>
+                            <constraint firstItem="x38-b3-y1o" firstAttribute="leading" secondItem="QXQ-2a-A4b" secondAttribute="leading" constant="20" id="eGx-Qj-JQT"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="appleSignInButton" destination="aqX-Gs-mYC" id="Fis-my-RDA"/>
+                        <outlet property="emailTextField" destination="dtp-OS-SgO" id="Gke-y9-bvT"/>
+                        <outlet property="googleSignInButton" destination="3re-vc-UyQ" id="TPr-yp-f8r"/>
+                        <outlet property="loginButton" destination="2tE-oo-ZEZ" id="AEM-pK-WuV"/>
+                        <outlet property="passwordTextField" destination="kEy-Nj-DwG" id="zCD-hJ-Sh0"/>
+                        <outlet property="termsButton" destination="ZQf-Zv-jck" id="2zv-nE-rLf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7Z2-O4-C6M" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="727" y="101"/>
+        </scene>
+        <!--Terms And Conditions View Controller-->
+        <scene sceneID="l3L-Px-33L">
+            <objects>
+                <viewController storyboardIdentifier="TermsAndConditionsViewController" id="Hvj-0m-SmS" customClass="TermsAndConditionsViewController" customModule="TheraSync" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zWu-9f-3jY">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1ft-TX-KMy">
+                                <rect key="frame" x="16" y="75" width="44" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="44" id="F7U-74-RAv"/>
+                                    <constraint firstAttribute="height" constant="44" id="mTY-Bv-wB5"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" image="xmark" catalog="system" buttonSize="large"/>
+                                <connections>
+                                    <action selector="backButtonTapped:" destination="Hvj-0m-SmS" eventType="touchUpInside" id="AjD-uG-yR0"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Terms &amp; Conditions" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v9W-y9-pC2">
+                                <rect key="frame" x="119.00000000000001" y="87" width="155.33333333333337" height="20"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="45" baselineAdjustment="alignBaselines" highlighted="YES" sizingRule="oversize" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lqx-NP-zaa">
+                                <rect key="frame" x="16" y="149" width="361" height="635"/>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <mutableString key="content">1. Introduction &amp; Acceptance of Terms
+Purpose: States that by accessing or using the TheraSync apps (Pro, Connect, Kids), the user agrees to these terms.
+Key points:
+Defines "User" (OT, Patient) and "App/Services."
+Acknowledgment that terms are a legally binding agreement.
+Statement that if the user does not agree, they must not use the apps.
+2. Eligibility and User Accounts
+Purpose: Defines who can use the apps and the responsibilities of account holders.
+Key points:
+OT (TheraSync Pro): Must be a licensed and qualified occupational therapist or similar professional. Account creation, security, confidentiality.
+Mentor (TheraSync Connect): Must be a parent, guardian, or authorized caregiver linked by an OT. Consent to monitor a child's progress. Account security.
+Child (TheraSync Kids): No account creation; access is granted and managed by a Mentor. Age restrictions (e.g., parental consent required for children under 13, per COPPA in the US, or equivalent local laws).
+Accuracy of information provided during registration.
+Responsibility for maintaining account security (passwords, etc.).
+3. Nature of Services and Disclaimers
+Purpose: Clarifies what the app does and, crucially, what it doesn't do (i.e., it's a tool, not a substitute for professional care).
+Key points:
+TheraSync provides tools for OTs to create routines, for Mentors to guide, and for children to follow.
+Crucial Disclaimer: The app is a support tool and does not provide medical, therapeutic, or diagnostic services. It does not replace professional judgment, treatment plans, or direct supervision by a qualified therapist.
+Users are solely responsible for the content they create, use, and the decisions they make based on app usage.
+4. User Responsibilities and Conduct
+Purpose: Outlines acceptable use and prohibited activities.
+Key points:
+Compliance with all applicable laws and regulations (especially regarding healthcare, privacy, and children's data).
+Prohibition of misuse, hacking, distributing malware, or interfering with app functionality.
+Respectful communication.
+Reporting of security vulnerabilities or breaches.
+5. Intellectual Property Rights
+Purpose: Protects the app's software, content, and branding, while addressing user-generated content.
+Key points:
+All content within the app (code, design, trademarks, etc.) belongs to TheraSync (or its licensors).
+Users are granted a limited, non-exclusive, non-transferable license to use the app for its intended purpose.
+User-Generated Content (UGC):
+OTs/Mentors retain ownership of the routines, videos, audio, and notes they create.
+Grant TheraSync a license to host, display, and distribute this content within the app for the intended users (OTs, Mentors, Children).
+Responsibility for ensuring UGC does not infringe on third-party rights (copyright, privacy, etc.).
+6. Privacy Policy Reference
+Purpose: Links to a separate, comprehensive Privacy Policy.
+Key points:
+Explicitly states that data collection, usage, storage, and sharing are governed by the Privacy Policy.
+Highlights the importance of children's privacy (COPPA, GDPR-K, etc.) and parental consent.
+7. Data Security
+Purpose: Outlines the app's commitment to protecting user data.
+Key points:
+Description of security measures taken (encryption, access controls, etc.).
+Acknowledgement that no system is 100% secure.
+User's responsibility to protect their own account credentials.
+8. Fees and Payment (if applicable)
+Purpose: If the TheraSync Pro app has subscription fees or in-app purchases.
+Key points:
+Pricing, billing cycles, payment methods.
+Refund policy.
+Subscription auto-renewal terms.
+9. Termination
+Purpose: Explains conditions under which accounts can be terminated.
+Key points:
+Termination by the user (how to cancel).
+Termination by TheraSync (e.g., for breach of terms, illegal activity, non-payment).
+Effect of termination on data access and storage.
+10. Disclaimers of Warranties
+Purpose: Limits the company's liability regarding the app's performance.
+Key points:
+App provided "as is" and "as available."
+No guarantee of uninterrupted, error-free, or secure service.
+No warranty regarding the accuracy or reliability of results obtained from using the app.
+11. Limitation of Liability
+Purpose: Restricts the amount and types of damages the company can be held responsible for.
+Key points:
+Exclusion of liability for indirect, incidental, consequential damages.
+Maximum liability cap.
+12. Indemnification
+Purpose: Requires users to protect the company from legal claims arising from their misuse of the app.
+Key points:
+User agrees to indemnify and hold harmless TheraSync from any claims, damages, losses, or expenses (including legal fees) resulting from their breach of these terms, violation of law, or infringement of third-party rights.
+13. Governing Law and Dispute Resolution
+Purpose: Specifies which laws apply and how legal disputes will be handled.
+Key points:
+Jurisdiction (e.g., "Laws of the State of Delaware, USA").
+Arbitration clause (often preferred to avoid lengthy court battles).
+Class action waiver.
+14. Changes to Terms
+Purpose: Reserves the right for the company to update the terms.
+Key points:
+Notification method (e.g., in-app notification, email).
+Effective date of changes.
+Continued use implies acceptance of new terms.
+15. Miscellaneous
+Purpose: Standard legal boilerplate clauses.
+Key points:
+Severability (if one part is invalid, the rest remains).
+Entire Agreement (these terms supersede prior agreements).
+Waiver (failure to enforce a right doesn't waive it).
+Assignment (user cannot transfer rights; company can).
+</mutableString>
+                                        <attributes>
+                                            <font key="NSFont" metaFont="system" size="17"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="16. Contact Information">
+                                        <attributes>
+                                            <font key="NSFont" metaFont="system" size="17"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QuZ-h0-hub">
+                                <rect key="frame" x="333" y="75" width="44" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="5XT-ba-gca"/>
+                                    <constraint firstAttribute="width" constant="44" id="96A-AT-XSh"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" image="checkmark" catalog="system" buttonSize="large"/>
+                                <connections>
+                                    <action selector="doneButtonTapped:" destination="Hvj-0m-SmS" eventType="touchDragInside" id="P5b-JC-dsW"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Ca5-Ur-dbq"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="QuZ-h0-hub" firstAttribute="top" secondItem="zWu-9f-3jY" secondAttribute="top" constant="75" id="173-wR-Iha"/>
+                            <constraint firstItem="1ft-TX-KMy" firstAttribute="leading" secondItem="zWu-9f-3jY" secondAttribute="leadingMargin" id="4Vc-a5-5aB"/>
+                            <constraint firstItem="QuZ-h0-hub" firstAttribute="trailing" secondItem="zWu-9f-3jY" secondAttribute="trailingMargin" id="GvL-Ae-mQu"/>
+                            <constraint firstItem="v9W-y9-pC2" firstAttribute="top" secondItem="zWu-9f-3jY" secondAttribute="top" constant="87" id="Rfd-lB-NDa"/>
+                            <constraint firstItem="1ft-TX-KMy" firstAttribute="top" secondItem="zWu-9f-3jY" secondAttribute="top" constant="75" id="YlP-Lc-3ig"/>
+                            <constraint firstItem="v9W-y9-pC2" firstAttribute="leading" secondItem="1ft-TX-KMy" secondAttribute="trailing" constant="59" id="eia-PQ-hBL"/>
+                            <constraint firstItem="Ca5-Ur-dbq" firstAttribute="trailing" secondItem="lqx-NP-zaa" secondAttribute="trailing" constant="16" id="izI-rP-6zi"/>
+                            <constraint firstItem="lqx-NP-zaa" firstAttribute="bottom" secondItem="Ca5-Ur-dbq" secondAttribute="bottom" id="m9y-ea-Wdh"/>
+                            <constraint firstItem="1ft-TX-KMy" firstAttribute="centerY" secondItem="v9W-y9-pC2" secondAttribute="centerY" id="mOR-oV-qLe"/>
+                            <constraint firstItem="lqx-NP-zaa" firstAttribute="top" secondItem="1ft-TX-KMy" secondAttribute="bottom" constant="30" id="sWf-hP-rVG"/>
+                            <constraint firstItem="lqx-NP-zaa" firstAttribute="leading" secondItem="Ca5-Ur-dbq" secondAttribute="leading" constant="16" id="wYF-9T-uyo"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="backButton" destination="1ft-TX-KMy" id="pNc-4o-kdr"/>
+                        <outlet property="doneButton" destination="QuZ-h0-hub" id="JDo-Hg-LEd"/>
+                        <outlet property="titleLabel" destination="v9W-y9-pC2" id="tcA-bm-MWo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Iqq-6H-L5b" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1513.7404580152672" y="100.70422535211269"/>
+        </scene>
     </scenes>
     <resources>
         <image name="apple.logo" catalog="system" width="105" height="128"/>
+        <image name="checkmark" catalog="system" width="128" height="114"/>
         <image name="checkmark.square" catalog="system" width="128" height="114"/>
         <image name="g.circle" catalog="system" width="128" height="123"/>
+        <image name="xmark" catalog="system" width="128" height="113"/>
         <namedColor name="AccentColor">
             <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
@@ -248,6 +655,9 @@
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGray3Color">
             <color red="0.78039215689999997" green="0.78039215689999997" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

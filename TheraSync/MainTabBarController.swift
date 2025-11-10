@@ -13,7 +13,7 @@ class MainTabBarController: UITabBarController {
         super.viewDidLoad()
         
         // ---
-        // 1. Load the "Appointment" screen (This one is DONE)
+        // 1. Load your "Appointment" screen
         // ---
         let appointmentNav = createNavController(
             from: "Appointment",
@@ -23,17 +23,17 @@ class MainTabBarController: UITabBarController {
         )
         
         // ---
-        // 2. Load the "Patients" screen (TEMPORARILY COMMENTED OUT)
+        // 2. Load your teammate's "Patients" screen
         // ---
-//        let patientsNav = createNavController(
-//            from: "Patients",
-//            with: "PatientsViewController",
-//            title: "Patients",
-//            image: "person.2.fill"
-//        )
+        let patientsNav = createNavController(
+            from: "Patients", // <-- Make sure this is your teammate's storyboard file name
+            with: "PatientsViewController", // <-- Make sure this is their Storyboard ID
+            title: "Patients",
+            image: "person.2.fill"
+        )
         
         // ---
-        // 3. Load the "Chat" screen (TEMPORARILY COMMENTED OUT)
+        // 3. Load the "Chat" placeholder (still commented out)
         // ---
 //        let chatNav = createNavController(
 //            from: "Chat",
@@ -43,23 +43,20 @@ class MainTabBarController: UITabBarController {
 //        )
 
         // ---
-        // 4. Load the "Profile" screen (TEMPORARILY COMMENTED OUT)
+        // 4. Load your teammate's "Profile" screen
         // ---
-//        let profileNav = createNavController(
-//            from: "Profile",
-//            with: "ProfileViewController",
-//            title: "Profile",
-//            image: "person.crop.circle.fill"
-//        )
+        let profileNav = createNavController(
+            from: "Profile", // <-- Make sure this is your teammate's storyboard file name
+            with: "ProfileViewController", // <-- Make sure this is their Storyboard ID
+            title: "Profile",
+            image: "person.crop.circle.fill"
+        )
 
         // ---
         // 5. Set the tabs
         // ---
-        // We are only loading the one tab you built
-        self.viewControllers = [appointmentNav]
-        
-        // (Later, you will change it back to this):
-        // self.viewControllers = [appointmentNav, patientsNav, chatNav, profileNav]
+        // We leave 'chatNav' out for now
+        self.viewControllers = [appointmentNav, patientsNav, profileNav]
         
         // Style the tab bar
         self.tabBar.backgroundColor = .white
@@ -76,24 +73,23 @@ class MainTabBarController: UITabBarController {
         let navController = UINavigationController(rootViewController: viewController)
         navController.tabBarItem = UITabBarItem(title: title, image: UIImage(systemName: image), tag: 0)
         
-        // --- Native Nav Bar Styling ---
+        // Set the nav bar to have the same gradient as your other screens
         let appearance = UINavigationBarAppearance()
-        
-        // Make the bar transparent so your gradient shows through
         appearance.configureWithTransparentBackground()
         
-        // Set the title text colors to white
+        // Make the nav bar transparent so the gradient shows through
+        let topColor = UIColor(red: 69/255, green: 147/255, blue: 255/255, alpha: 1.0)
+        appearance.backgroundColor = topColor
+        
+        // This makes the title "Appointment", "Patients", etc. big and white
         appearance.largeTitleTextAttributes = [.foregroundColor: UIColor.white]
-        appearance.titleTextAttributes = [.foregroundColor: UIColor.white]
+        appearance.titleTextAttributes = [.foregroundColor: UIColor.white] // For the small title
         
         navController.navigationBar.standardAppearance = appearance
         navController.navigationBar.scrollEdgeAppearance = appearance
         navController.navigationBar.tintColor = .white // For the '+' and back buttons
         
-        // ---
-        // !!! THIS IS THE LINE THAT DOES IT !!!
-        // ---
-        // This enables the "Large" title and the "Compact" title on scroll
+        // This enables the large title
         navController.navigationBar.prefersLargeTitles = true
 
         return navController
